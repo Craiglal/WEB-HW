@@ -1,0 +1,120 @@
+tbody tr:nth-child(odd)
+{
+  background-color: grey; 
+  z-index: -1;
+}
+
+table
+{
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+td, th {
+  position: relative;
+}
+
+td
+{
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+input{
+    background-color: rgba(255,0,0, 0.3);
+}
+
+input:valid{
+    background-color: rgba(0,255,0, 0.3);
+}
+
+#rd1:checked ~ table tbody tr.weekend{
+    display: none;
+}
+
+#rd2:checked ~ table tbody tr.week{
+    display: none;
+}
+
+#rd3:checked ~ table tbody tr.evening{
+  display: none;
+}
+
+#rd4:checked ~ table tbody tr.morning{
+  display: none;
+}
+ 
+#r1:checked ~ table tbody tr.two,
+#r1:checked ~ table tbody tr.three,
+#r1:checked ~ table tbody tr.four,
+#r1:checked ~ table tbody tr.five{
+  display: none;
+}
+
+#r2:checked ~ table tbody tr.one,
+#r2:checked ~ table tbody tr.three,
+#r2:checked ~ table tbody tr.four,
+#r2:checked ~ table tbody tr.five{
+  display: none;
+}
+
+#r3:checked ~ table tbody tr.one,
+#r3:checked ~ table tbody tr.two,
+#r3:checked ~ table tbody tr.four,
+#r3:checked ~ table tbody tr.five{
+  display: none;
+}
+
+#r4:checked ~ table tbody tr.one,
+#r4:checked ~ table tbody tr.three,
+#r4:checked ~ table tbody tr.two,
+#r4:checked ~ table tbody tr.five{
+  display: none;
+}
+
+#r5:checked ~ table tbody tr.one,
+#r5:checked ~ table tbody tr.three,
+#r5:checked ~ table tbody tr.two,
+#r5:checked ~ table tbody tr.four{
+  display: none;
+}
+
+body {
+  counter-reset: section;
+}
+
+tbody td:nth-child(1)::after
+{
+  counter-increment: section;
+  content: counter(section);
+}
+
+input#send{
+  display: none;
+}
+
+#tel:valid + #email:valid ~ input#send
+{
+  display: inline-block;
+}
+
+tbody tr:hover
+{
+  background-color: #ff0;
+}
+
+tbody td:hover:after {
+  background-color: #ff0;
+  content: '';  
+  height: 10000px;    
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;        
+}
+
+tbody td:hover{
+  background: lightcoral;
+}

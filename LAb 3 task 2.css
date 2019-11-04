@@ -1,0 +1,17 @@
+a {
+    color: blue;
+}
+
+a[href^="http"]{
+    color: #4CAF50;
+}
+
+a[href*="google"]{
+    color: #666;
+}
+
+a[target="_blank"]::after {
+    display: inline-block;
+    content: "⇱";
+    transform: scale(-1, 1);
+}
