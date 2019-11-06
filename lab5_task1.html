@@ -8,21 +8,25 @@
     <title>Lab 5 task 1</title>
 </head>
 <body>
+    <input type="radio" name="switch" id="plate" checked>
+    <label for="plate">
+        <img src="imgs/table-grid.svg" alt="plate-img"> Плитка
+    </label>
+    <input type="radio" name="switch" id="list">
+    <label for="list">
+        <img src="imgs/list.svg" alt="list-img"> Список
+    </label>
     <div class="content">
-        <input type="radio" name="switch" id="sw1" checked>
-        <label style="display: block;">!111</label>
-        <input type="radio" name="switch" id="sw2">
-        <label style="display: block;">!222</label>
         <div class="block">
-            <div class="img">
-                <img src="img.jpg">
+            <div class="item_img">
+                <img class="item_img_img" src="imgs/img1.jpg">
             </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
+            <div class="item_data">
+                <a href="#" class="item_header">
+                    Набор чайных ложек Lefard 6 шт, 86-1238
+                </a>
+                <p class="item_category">Посуд</p>
+                <div class="item_stars">
                     <input type="radio" name="star1" id="st1_1">
                     <label for="st1_1"></label>
                     <input type="radio" name="star1" id="st1_2">
@@ -34,21 +38,21 @@
                     <input type="radio" name="star1" id="st1_5">
                     <label for="st1_5"></label>
                 </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
+                <p class="item_price">310,68</p>
+            </div>
+            <p class="item_caption">Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
         </div>
 
         <div class="block">
-            <div class="img">
-                <img src="img.jpg">
+            <div class="item_img">
+                <img class="item_img_img" src="imgs/img2.jpg">
             </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
+            <div class="item_data">
+                <a href="#" class="item_header">
+                    YOUNG TOWN YT90N Внешний диаметр: 90мм Внутренний диаметр: 76-82мм
+                </a>
+                <p class="item_category">Декор</p>
+                <div class="item_stars">
                     <input type="radio" name="star2" id="st2_1">
                     <label for="st2_1"></label>
                     <input type="radio" name="star2" id="st2_2">
@@ -60,21 +64,29 @@
                     <input type="radio" name="star2" id="st2_5">
                     <label for="st2_5"></label>
                 </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
+                <p class="item_price">490</p>
+            </div>
+            <p class="item_caption">
+                Часовая капсула YOUNG TOWNYT90N<br>
+                Внешний диаметр: 90мм <br>
+                Внутренний диаметр: 76-82мм <br>
+                Крепление: Пружины <br>
+                Материал корпуса пластик<br>
+                Материал ободка пластик<br>
+                Элемент питания 1xLR6 1,5V
+            </p>
         </div>
 
         <div class="block">
-            <div class="img">
-                <img src="img.jpg">
+            <div class="item_img">
+                <img class="item_img_img" src="imgs/img3.jpg">
             </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
+            <div class="item_data">
+                <a href="#" class="item_header">
+                    Набор чайных ложек Lefard 6 шт, 86-1238
+                </a>
+                <p class="item_category">Одяг</p>
+                <div class="item_stars">
                     <input type="radio" name="star3" id="st3_1">
                     <label for="st3_1"></label>
                     <input type="radio" name="star3" id="st3_2">
@@ -84,23 +96,23 @@
                     <input type="radio" name="star3" id="st3_4">
                     <label for="st3_4"></label>
                     <input type="radio" name="star3" id="st3_5">
-                    <label for="st3_5"></label>
+                    <label for="st1_5"></label>
                 </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
+                <p class="item_price">703,74</p>
+            </div>
+            <p class="item_caption">Костюм-сауна Sauna Suit предназначен для интенсивного сброса веса во время занятий аэробикой, атлетикой, прыгания на скакалке, зарядке, занятий на велотренажере, беговой дорожке.Вы замечательно выводите накопившуюся жидкость, а вслед за ней и токсины, что присутствуют в нашем организме. Стрелочка на весах сможет показать потерю нескольких килограммов буквально сразу после занятия в этом костюме.</p>
         </div>
 
         <div class="block">
-            <div class="img">
-                <img src="img.jpg">
+            <div class="item_img">
+                <img class="item_img_img" src="imgs/img4.jpg">
             </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
+            <div class="item_data">
+                <a href="#" class="item_header">
+                    Барельеф Бык
+                </a>
+                <p class="item_category">Декор</p>
+                <div class="item_stars">
                     <input type="radio" name="star4" id="st4_1">
                     <label for="st4_1"></label>
                     <input type="radio" name="star4" id="st4_2">
@@ -112,61 +124,9 @@
                     <input type="radio" name="star4" id="st4_5">
                     <label for="st4_5"></label>
                 </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
-        </div>
-
-        <div class="block">
-            <div class="img">
-                <img src="img.jpg">
+                <p class="item_price">565</p>
             </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
-                    <input type="radio" name="star5" id="st5_1">
-                    <label for="st5_1"></label>
-                    <input type="radio" name="star5" id="st5_2">
-                    <label for="st5_2"></label>
-                    <input type="radio" name="star5" id="st5_3">
-                    <label for="st5_3"></label>
-                    <input type="radio" name="star5" id="st5_4">
-                    <label for="st5_4"></label>
-                    <input type="radio" name="star5" id="st5_5">
-                    <label for="st5_5"></label>
-                </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
-        </div>
-
-        <div class="block">
-            <div class="img">
-                <img src="img.jpg">
-            </div>
-            <div class="header">
-                <h2><a href="#">Набор чайных ложек Lefard 6 шт, 86-1238</a></h2>
-            </div>
-            <div class="text">
-                <p class="category">Lel</p>
-                <div class="stars">
-                    <input type="radio" name="star6" id="st6_1">
-                    <label for="st6_1"></label>
-                    <input type="radio" name="star6" id="st6_2">
-                    <label for="st6_2"></label>
-                    <input type="radio" name="star6" id="st6_3">
-                    <label for="st6_3"></label>
-                    <input type="radio" name="star6" id="st6_4">
-                    <label for="st6_4"></label>
-                    <input type="radio" name="star6" id="st6_5">
-                    <label for="st6_5"></label>
-                </div>
-                <p class="price">310,68 грн</p>
-                <p>Набор чайных ложек Lefard 6 шт. - набор удобных, функциональных и качественных ложек, выполнен из нержавеющей стали, отличается высокими антикоррозионными свойствами, что устойчива к воздействию кислот и щелочей, не изменяет вкус и цвет пищи и совершенно безвредна.</p>
-            </div>      
+            <p class="item_caption">Наша компания занимается изготовлением изделий из натурального дерева. Будем рады сотрудничать с оптовыми покупателями, партнерами, дилерами, магазинами, интернет магазинами, салонами и всеми, кто проявит интерес к нашей продукции. Условия и цены оговариваются отдельно.</p>
         </div>
     </div>        
 </body>

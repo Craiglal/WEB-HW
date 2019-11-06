@@ -1,0 +1,130 @@
+p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.stars label::after{
+    content: '\2606';
+    cursor: pointer;
+    size: 30px;
+    color: orange;
+    font-size: 40px;
+}
+
+.stars input:hover ~ label::after,
+.stars input:checked ~ label::after{
+    content: '\2605';
+}
+
+.stars input{
+    display: none;
+}
+
+.stars{
+    text-align: left;
+    direction: rtl;
+}
+
+.content{ 
+    display: block;
+    float: left;
+    border: gray 1px solid;
+}
+
+#sw1:checked ~ .block{
+    position:relative;
+    margin: 10px;
+    display: inline-block;
+    border: gray 1px solid;
+    max-width: 300px;
+    max-height: 620px;
+}
+
+#sw2:checked ~ .block{
+    display: block;
+    width: 100%;
+    height: 330px;
+    padding: 8px;
+}
+
+.img{
+    justify-content: center;
+    width: 300px;
+    overflow: hidden;
+}
+.img img {
+    margin: 10px;
+    max-width: 280px;
+}
+
+#sw1:checked ~ .header h2 a{
+    color:lightslategrey;
+    margin: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#sw1:checked ~ .text p{
+    margin: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line; 
+}
+
+.img{
+    justify-content: center;
+    width: 300px;
+    overflow: hidden;
+}
+.img img {
+    margin: 10px;
+    max-width: 280px;
+}
+
+#sw2:checked + .header h2 a{
+    color:lightslategrey;
+    margin: 10px;
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#sw2:checked + .text p{
+    margin: 10px;
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line; 
+}
+
+#sw2:checked + .data{
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 350px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#sw2:checked + .caption{
+    width: 300px;
+    float: right;
+    height: 100%;
+    padding-top: 7%;
+    margin-left: 0px; 
+}
+
+.category{
+    color:grey;
+    font-size: 15px;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}

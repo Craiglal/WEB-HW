@@ -1,3 +1,4 @@
+/*Start setup*/
 body
 {
 	margin: 0 auto;
@@ -6,28 +7,34 @@ body
 	height: 1370px;
 }
 
-.item_stars label::after{
-    content: '\2606';
-    cursor: pointer;
-    size: 30px;
-    color: orange;
-    font-size: 40px;
+/*Realised rating*/
+.item__stars label::after
+{
+	content: '\2606';
+	color: orange;
+	font-size: 30px;
+	cursor: pointer;
+	margin: -3.7px;
 }
 
-.item_stars input:hover ~ label::after,
-.item_stars input:checked ~ label::after{
-    content: '\2605';
+.item__stars
+{
+	direction: rtl;
+	text-align: left;
 }
 
-.item_stars input{
-    display: none;
+.item__stars input:hover ~ label::after,
+.item__stars  input:checked ~ label::after
+{
+	content: '\2605';
 }
 
-.item_stars{
-    text-align: left;
-    direction: rtl;
+.item__stars  input
+{
+	display: none;
 }
 
+/*Changing view model*/
 #plate,
 #list
 {
@@ -48,47 +55,48 @@ body
 #plate:checked ~ [for="plate"],
 #list:checked ~ [for="list"]
 {
-	color: darkblue;
+	color: red;
 }
 
 body > label
 {
 	font-size: 20px;
 	padding: 5px;
-	border: 1px groove darkblue;
+	border: 1px groove black;
 }
 
-[class ^= "item_"]
+/*Setup simgle item*/
+[class ^= "item__"]
 {
 	margin-bottom: 2px;
 	margin-top: 2px;
 }
 
-.block
+.item
 {
 	display: inline-block;
 	float: left;
 	box-sizing: border-box;
 	width: 300px;
-	height: 550px;
+	height: 650px;
 	background-color: #fff;
 	border: 2px groove black;
 	padding: 24px;
 	margin: 10px 0px 0px 22px;
 }
 
-.item_img_img
+.item__image
 {
-    max-height: 230px;
+	height: 300px;
 	max-width: 100%;
 }
 
-.item_img
+.item__image__box
 {
 	text-align: center;
 }
 
-.item_header
+.item__name
 {
 	height: 35px;
 	display: block;
@@ -100,40 +108,41 @@ body > label
 	margin-bottom: 8px;
 }
 
-.item_category
+.item__category
 {
 	color: #aaa;
 	font-size: 12px;
 }
 
-.item_price
+.item__price
 {
 	color: #ff3333;
 	font-weight: 700;
 	font-size: 24px;
 }
 
-.item_price::after
+.item__price::after
 {
 	content: 'грн.';
 }
 
-.item_caption
+.item__caption
 {
 	font-size: 14px;
-	max-height: 130px;
+	max-height: 160px;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: pre-line;
 }
 
+/*List model*/
 #list:checked ~ body
 {
 	width: 1000px;
 }
 
-#list:checked ~ .content .block
+#list:checked ~ .items .item
 {
 	display: block;
 	width: 100%;
@@ -141,7 +150,7 @@ body > label
 	padding: 8px;
 }
 
-#list:checked ~ .content .item_img
+#list:checked ~ .items .item__image__box
 {
 	padding: 0px;
 	width: 300px;
@@ -149,9 +158,8 @@ body > label
 	float: left;
 }
 
-#list:checked ~ .content .item_data
+#list:checked ~ .items .item__data
 {
-    margin-left: 50px;
 	display: inline-block;
 	float: left;
 	height: 100%;
@@ -160,37 +168,39 @@ body > label
 	padding-top: 80px;
 }
 
-#list:checked ~ .content .item_data .item_stars
+#list:checked ~ .items .item__data .item__stars
 {
 	text-align: center;
 }
 
-#list:checked ~ .content .item_caption
+#list:checked ~ .items .item__caption
 {
 	width: 300px;
-    float: right;
+	float: right;
 	height: 100%;
 	padding-top: 7%;
 	margin-left: 0px; 
 }
 
-.block a:hover
+/*Hover effects*/
+.item a:hover
 {
-	color: darkorange;
+	color: red;
 	min-height: 23px;
 	white-space: normal;
 	font-size: 16px;
 	text-overflow: initial;
 }
 
-.item_caption:hover
+.item__caption:hover
 {
 	overflow: visible;
-	color: darkblue;
-	border: 1px solid black;
+	color: red;
+	border: 1px groove black;
 	background-color: white;
 	max-height: initial;
 	height: auto;
 	box-sizing: border-box;
 	padding: 5px;
+	border-radius: 4px;
 }
