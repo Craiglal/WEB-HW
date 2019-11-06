@@ -1,0 +1,21 @@
+label::after{
+    content: '\2606';
+    cursor: pointer;
+    size: 30px;
+    color: orange;
+}
+
+input:hover ~ label::after,
+input:checked ~ label::after{
+    content: '\2605';
+    
+}
+
+input{
+    display: none;
+}
+
+.cont{
+    text-align: left;
+    direction: rtl;
+}
