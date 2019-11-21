@@ -1,7 +1,7 @@
 body
 {
 	margin: 0 auto;
-	width: 80%;
+	width: 75%;
 	font-family: Arial;
 	height: 1370px;
 }
@@ -9,15 +9,17 @@ body
 .block
 {
     position: static;
-	display: inline-block;
 	float: left;
 	box-sizing: border-box;
 	width: 300px;
 	height: 200px;
-	background-color: #fff;
-	border: 1px solid black;
-    margin: 30px;
-    overflow: hidden;
+	background-color: #fff;	
+    margin: 10px;
+	z-index: -1;
+}
+
+.text{
+	display: none;
 }
 
 .item_img_img
@@ -42,18 +44,29 @@ a.item_header
     text-align: center;
 }
 
-p.item_caption
-{
-	font-size: 14px;
-	display: block;
-}
-
-.block:hover
+.block:hover .item_img
 {
     position: relative;
-    height: fit-content;
-    width: 350px;
+	width: 350px;
     left: -25px;
     top: -15px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.block:hover .text{
+	display: block;
+	position: relative;
+	width: 350px;
+	left: -25px;
+    top: -15px;
+	box-shadow:  5px 10px 5px #888888;
+}
+
+.item_caption_ing{
+	padding: 8px;
+	font-style: italic;
+}
+
+[class ^= "item_caption"]
+{
+	font-size: 14px;
 }

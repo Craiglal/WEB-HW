@@ -1,0 +1,43 @@
+body{
+    margin: 0; 
+    overflow-x: hidden;
+}
+
+.out{
+    width: 200vw;
+    transition: margin-left 0.5s;
+}
+
+.in{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: gray;
+    width: 23vw;
+    height: 100px;
+    margin: 1vw;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+#sl1:checked ~ .out{
+    margin-left: 0;
+}
+
+#sl2:checked ~ .out{
+    margin-left: -25vw;
+}
+
+
+#sl3:checked ~ .out{
+    margin-left: -50vw;
+}
+
+
+#sl4:checked ~ .out{
+    margin-left: -75vw;
+}
+
+#sl5:checked ~ .out{
+    margin-left: -100vw;
+}

@@ -1,0 +1,42 @@
+body{
+    margin: 0 auto; 
+}
+
+.in{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: gray;
+    width: 23vw;
+    height: 100px;
+    margin: 1vw;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+#sl1:checked ~ .out >.in:nth-child(n+5){
+    display: none;
+}
+
+#sl2:checked ~ .out >.in:nth-child(n+6),
+#sl2:checked ~ .out >.in:nth-child(1)
+{
+    display: none;
+}
+
+#sl3:checked ~ .out >.in:nth-child(n+7),
+#sl3:checked ~ .out >.in:nth-child(-n+2)
+{
+    display: none;
+}
+
+#sl4:checked ~ .out >.in:nth-child(n+8),
+#sl4:checked ~ .out >.in:nth-child(-n+3)
+{
+    display: none;
+}
+
+#sl5:checked ~ .out >.in:nth-child(-n+4)
+{
+    display: none;
+}
