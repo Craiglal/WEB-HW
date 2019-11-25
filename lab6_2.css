@@ -57,32 +57,32 @@
 	cursor: pointer;
 }
 
-input[name="slider"] {
-	position: relative;
-	left: 45vw;
-	top: 350px;
-	z-index: -99999px;
+label[for="sl1"]::after{
+    content: url('keks/arr_left.jpg');
+    position: relative;
+    cursor: pointer;
+    size: 30px;
+    top: 190px;
 }
-rgb(255, 226, 226)
+
+label[for="sl2"]::after{
+    content: url('keks/arr_right.jpg');
+    position: relative;
+    cursor: pointer;
+    size: 30px;
+    top: 190px;
+    left: 97vw;
+}
+
+input{
+    display: none;
+}
+
 #sl1:checked ~ .row{
     margin-left: 0;
 }
 
 #sl2:checked ~ .row{
-    margin-left: -25vw;
-}
-
-
-#sl3:checked ~ .row{
-    margin-left: -50vw;
-}
-
-
-#sl4:checked ~ .row{
-    margin-left: -75vw;
-}
-
-#sl5:checked ~ .row{
     margin-left: -100vw;
 }
 
