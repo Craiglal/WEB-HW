@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.wrapper header,
+.wrapper footer{
+    margin: 10px;
+    padding: 20px;
+    background-color: lightslategray;
+    border-radius: 10px;
+    flex-flow: column wrap; 
+    height: 92vh;
+    flex: 0 0 10vw;
+}
+
+.inner{
+    min-height: 100vh;
+    min-width: 70vw;
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.inner > *{
+    flex: 70vw;
+    margin: 10px;
+    padding: 20px;
+    height: 25vh;
+    background-color: lightslategray;
+    border-radius: 10px;
+}
