@@ -1,0 +1,146 @@
+p{
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.content{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 4fr 1fr;
+}
+
+.boxes{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+}
+
+.filter{
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.box{
+    display: grid;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: lightblue;
+    grid-template-rows: 4fr 1fr;
+}
+
+.box:hover{
+    box-shadow: 5px 5px 18px #888888;
+}
+
+.img{
+    display: inline-block;
+    max-width: 60%;
+    max-height: 95%;
+    object-fit: contain;
+    object-position: left top;
+}
+
+.top{
+    border-bottom: 1px solid lightgray;
+}
+
+.name{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 40%;
+    word-wrap: normal;
+}
+
+.info{
+    padding-top: 5px;
+}
+
+input[name="filter"] {
+    display:none;
+}
+
+.lbl {
+    background: lightgray;
+    text-align: center;
+    margin: 10px 50px;
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+#f1:checked ~ label[for="f1"] .lbl{
+    border: 1px solid black;
+    background: crimson;
+}
+
+#f2:checked ~ label[for="f2"] .lbl{
+    border: 1px solid black;
+    background: crimson;
+}
+
+#f3:checked ~ label[for="f3"] .lbl{
+    border: 1px solid black;
+    background: crimson;
+}
+
+#f4:checked ~ label[for="f4"] .lbl{
+    border: 1px solid black;
+    background: crimson;
+}
+
+#f5:checked ~ label[for="f5"] .lbl{
+    border: 1px solid black;
+    background: crimson;
+}
+
+.filter form #f1:checked + .content #rlt,
+#f1:checked ~ .content #srnk,
+#f1:checked ~ .content #tst,
+#f1:checked + .content #trt{
+    display: none;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 2px; /* Specified height */
+    background: gray; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; 
+    background: darkblue; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; 
+    background: darkblue; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
