@@ -9,42 +9,43 @@
     <title>Тортики</title>
 </head>
 <body>
+    <input type="radio" name="filter" id="f1">
+    <input type="radio" name="filter" id="f2">
+    <input type="radio" name="filter" id="f3">
+    <input type="radio" name="filter" id="f4">
+    <input type="radio" name="filter" id="f5">
+    <input type="radio" name="filter" id="f6">
+    <div class="header">
+        <img class="logo" src="imgs/logo.png">
+    </div>
     <div class="content">
         <div class="filter">
-            <form>
-                <div class="filters">
-                    <p class="kkal">Калорії у порції</p>
-                    <div class="slidecontainer">
-                        <input name="range" type="range" min="0" max="400" value="0" class="slider" id="myRange1" multiple>
-                    </div>
-                    <p class="kkal">Від 0 до 400 кКал</p>
-                    <input type="radio" name="filter" id="f1">
-                    <label for="f1"><p class="lbl">Пиріг</p></label>
-                    <input type="radio" name="filter" id="f2">
-                    <label for="f2"><p class="lbl">Рулет</p></label>
-                    <input type="radio" name="filter" id="f3">
-                    <label for="f3"><p class="lbl">Сирники</p></label>
-                    <input type="radio" name="filter" id="f4">
-                    <label for="f4"><p class="lbl">Тістечко</p></label>
-                    <input type="radio" name="filter" id="f5">
-                    <label for="f5"><p class="lbl">Торт</p></label>
-                    <input type="reset" name="filter" id="f6">
-                    <label for="f6"><p class="lbl">Скинути фільтер</p></label>
+            <div class="filters">
+                <p class="kkal">Калорії у порції</p>
+                <div class="slidecontainer">
+                    <input name="range" type="range" min="0" max="400" value="0" class="slider" id="myRange1" multiple>
                 </div>
-            </form>
+                <p class="kkal">Від 0 до 400 кКал</p>
+                <label for="f1"><p class="lbl">Пиріг</p></label>
+                <label for="f2"><p class="lbl">Рулет</p></label>
+                <label for="f3"><p class="lbl">Сирники</p></label>
+                <label for="f4"><p class="lbl">Тістечко</p></label>
+                <label for="f5"><p class="lbl">Торт</p></label>
+                <label for="f6"><p class="lbl">Скинути фільтер</p></label>
+            </div>
         </div>
         <div class="boxes">
-            <img class="mob" src="imgs/smet.jpg"> 
+            <img class="mob" id="prgmob" src="imgs/swtbab.jpeg"> 
             <div class="box" id="prg">
                 <div class="top">
-                    <img class="img" src="imgs/smet.jpg"> 
-                    <p class="name">Торт: <strong>Сметанковий</strong></p>
+                    <img class="img" src="imgs/swtbab.jpeg"> 
+                    <p class="name">Пиріг: <strong>Свято у бабусі</strong></p>
                 </div>
                 <div class="bot">
-                    <p class="info">Калорій у порції: 265 кКал</p>
+                    <p class="info">Калорій у порції: 450 кКал</p>
                 </div>
             </div>
-            <img class="mob" src="imgs/smet.jpg"> 
+            <img class="mob" id="trtmob" src="imgs/smet.jpg"> 
             <div class="box" id="trt">
                 <div class="top">
                     <img class="img" src="imgs/smet.jpg"> 
@@ -54,47 +55,41 @@
                     <p class="info">Калорій у порції: 265 кКал</p>
                 </div>
             </div>
-            <img class="mob" src="imgs/smet.jpg"> 
-            <div class="box">
+            <img class="mob" id="rltmob" src="imgs/swt.jpg"> 
+            <div class="box" id="rlt">
                 <div class="top">
-                    <img class="img" src="imgs/smet.jpg"> 
-                    <p class="name">Торт: <strong>Сметанковий</strong></p>
+                    <img class="img" src="imgs/swt.jpg"> 
+                    <p class="name">Рулет: <strong>Святковий</strong></p>
                 </div>
                 <div class="bot">
-                    <p class="info">Калорій у порції: 265 кКал</p>
+                    <p class="info">Калорій у порції: 380 кКал</p>
                 </div>
             </div>
-            <img class="mob" src="imgs/smet.jpg"> 
-            <div class="box">
+            <img class="mob" id="srnkmob" src="imgs/srnk.webp"> 
+            <div class="box" id="srnk">
                 <div class="top">
-                    <img class="img" src="imgs/smet.jpg"> 
-                    <p class="name">Торт: <strong>Сметанковий</strong></p>
+                    <img class="img" src="imgs/srnk.webp"> 
+                    <p class="name">Сирники: <strong>З манкою</strong></p>
                 </div>
                 <div class="bot">
-                    <p class="info">Калорій у порції: 265 кКал</p>
+                    <p class="info">Калорій у порції: 250 кКал</p>
                 </div>
             </div>
-            <img class="mob" src="imgs/smet.jpg"> 
-            <div class="box">
+            <img class="mob" id="tstmob" src="imgs/tst.jpg"> 
+            <div class="box" id="tst">
                 <div class="top">
-                    <img class="img" src="imgs/smet.jpg"> 
-                    <p class="name">Торт: <strong>Сметанковий</strong></p>
+                    <img class="img" src="imgs/tst.jpg"> 
+                    <p class="name">Тістечко: <strong>Живі квіти</strong></p>
                 </div>
                 <div class="bot">
-                    <p class="info">Калорій у порції: 265 кКал</p>
-                </div>
-            </div>
-            <img class="mob" src="imgs/smet.jpg"> 
-            <div class="box">
-                <div class="top">
-                    <img class="img" src="imgs/smet.jpg"> 
-                    <p class="name">Торт: <strong>Сметанковий</strong></p>
-                </div>
-                <div class="bot">
-                    <p class="info">Калорій у порції: 265 кКал</p>
+                    <p class="info">Калорій у порції: 439 кКал</p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <p class="ft1">Контакти: <span style="color: blue;">tortik@smakota.ua</span></p>
+        <p class="ft2">@ 2019 Smakota</p>
     </div>
 </body>
 </html>
